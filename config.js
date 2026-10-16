@@ -20,10 +20,10 @@ const RAMO_CONFIG = {
   // ═══════════════════════════════════════════════════════
   pricing: {
     // قیمت اصلی (بدون تخفیف)
-    originalPrice: 5000000,      // ۵ میلیون تومان
+    originalPrice: 10000000,      // ۱۰  میلیون تومان
 
     // قیمت با تخفیف (قیمتی که به مشتری نشون داده می‌شه)
-    discountedPrice: 999000,     // ۹۹۹ هزار تومان
+    discountedPrice: 4999000,     // ۴ میلیون و ۹۹۹ هزار تومان
 
     // اگه false باشه، قیمت اصلی خط‌خورده و بج تخفیف مخفی می‌شن
     // (مثلاً وقتی می‌خوای تخفیف تموم بشه)
@@ -81,28 +81,44 @@ const RAMO_CONFIG = {
   // ═══════════════════════════════════════════════════════
   // 📥 لینک‌های دانلود — سه پلتفرم
   // ═══════════════════════════════════════════════════════
+  //
+  // ⚠️ توجه مهم:
+  // فایل‌ها رو باید توی GitHub Releases آپلود کنی.
+  // بعد از آپلود، لینک مستقیم هر فایل رو اینجا بذار.
+  //
+  // مراحل آپلود:
+  //   1. برو به github.com/raminkabiri/ramo-erp.ir/releases/new
+  //   2. Tag: v1.0.0
+  //   3. فایل‌ها رو drag & drop کن
+  //   4. Publish release
+  //   5. روی هر فایل کلیک کن → لینک رو کپی کن → اینجا بذار
+  // ═══════════════════════════════════════════════════════
   download: {
 
     // ─────────────────────────────────────────────
     // 🤖 اندروید (APK)
     // ─────────────────────────────────────────────
     android: {
-      enabled: true,              // اگه false باشه، دکمه غیرفعال می‌شه
-      url: '',                    // ← لینک APK رو اینجا بذار
-      // مثلاً: 'https://github.com/raminkabiri/ramo-erp.ir/releases/download/v1.0.0/ramo-android.apk'
-      badge: 'APK',               // بج روی کارت
-      comingSoonText: 'به‌زودی',  // متن وقتی لینک خالیه
+      enabled: true,
+      // لینک فایل APK — بعد از آپلود روی GitHub Releases
+      // الگو: 'https://github.com/raminkabiri/ramo-erp.ir/releases/download/v1.0.0/Ramo-arm64-v8a-release.apk'
+      url: '',
+      badge: 'APK',
+      comingSoonText: 'به‌زودی',
+      fileName: 'Ramo-arm64-v8a-release.apk',  // اسم فایل (فقط برای نمایش)
     },
 
     // ─────────────────────────────────────────────
-    // 🪟 ویندوز (ZIP)
+    // 🪟 ویندوز (Setup EXE)
     // ─────────────────────────────────────────────
     windows: {
       enabled: true,
-      url: '',                    // ← لینک فایل zip ویندوز رو اینجا بذار
-      // مثلاً: 'https://github.com/raminkabiri/ramo-erp.ir/releases/download/v1.0.0/ramo-windows.zip'
-      badge: 'ZIP',
+      // لینک فایل Setup EXE — بعد از آپلود روی GitHub Releases
+      // الگو: 'https://github.com/raminkabiri/ramo-erp.ir/releases/download/v1.0.0/Ramo_Setup_1.0.0.exe'
+      url: '',
+      badge: 'EXE',
       comingSoonText: 'به‌زودی',
+      fileName: 'Ramo_Setup_1.0.0.exe',        // اسم فایل (فقط برای نمایش)
     },
 
     // ─────────────────────────────────────────────
@@ -110,10 +126,12 @@ const RAMO_CONFIG = {
     // ─────────────────────────────────────────────
     ios: {
       enabled: true,
-      url: '',                    // ← لینک TestFlight یا App Store
-      // مثلاً: 'https://testflight.apple.com/join/xxxxxx'
+      // لینک TestFlight یا App Store
+      // الگو: 'https://testflight.apple.com/join/xxxxxx'
+      url: '',
       badge: 'TestFlight',
       comingSoonText: 'به‌زودی',
+      fileName: 'Ramo-iOS.ipa',                // اسم فایل (فقط برای نمایش)
     },
 
     // ─────────────────────────────────────────────
