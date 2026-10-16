@@ -1,25 +1,18 @@
 // ============================================================
-// ⚙️ تنظیمات رامو — هر وقت خواستی تغییر بده، فقط همین فایل رو
-// ویرایش کن. همه جای سایت خودکار آپدیت می‌شه.
+// ⚙️ تنظیمات رامو
 // ============================================================
 
 const RAMO_CONFIG = {
 
-  // ═══════════════════════════════════════════════════════
-  // 💰 قیمت‌ها و تنظیمات فروش (به تومان)
-  // ═══════════════════════════════════════════════════════
   pricing: {
-    originalPrice: 10000000,      // ۱۰ میلیون تومان
-    discountedPrice: 4990000,     // ۴ میلیون و ۹۹۰ هزار تومان
+    originalPrice: 10000000,
+    discountedPrice: 4990000,
     showDiscount: true,
     trialDays: 15,
     trialMaxProducts: 5,
     trialMaxSales: 5,
   },
 
-  // ═══════════════════════════════════════════════════════
-  // 📞 اطلاعات تماس
-  // ═══════════════════════════════════════════════════════
   contact: {
     phone: '09233052814',
     socialId: 'Ramo_erp',
@@ -30,9 +23,6 @@ const RAMO_CONFIG = {
     email: '',
   },
 
-  // ═══════════════════════════════════════════════════════
-  // 💳 درگاه پرداخت
-  // ═══════════════════════════════════════════════════════
   payment: {
     zarinpalEnabled: false,
     zarinpalMerchantId: '',
@@ -43,37 +33,35 @@ const RAMO_CONFIG = {
     bankName: '',
   },
 
-  // ═══════════════════════════════════════════════════════
-  // 📥 لینک‌های دانلود — سه پلتفرم
-  // ═══════════════════════════════════════════════════════
   download: {
+    // 🤖 اندروید — فعال (لینک داره)
     android: {
       enabled: true,
       url: 'https://github.com/raminkabiri/ramo-erp.ir/releases/download/v1.0.0/Ramo-arm64-v8a-release.apk',
       badge: 'APK',
-      comingSoonText: 'به‌زودی',
       fileName: 'Ramo-arm64-v8a-release.apk',
     },
+
+    // 🪟 ویندوز — فعال (لینک داره)
     windows: {
       enabled: true,
       url: 'https://github.com/raminkabiri/ramo-erp.ir/releases/download/v1.0.0/Ramo_Setup_1.0.0.exe',
       badge: 'EXE',
-      comingSoonText: 'به‌زودی',
       fileName: 'Ramo_Setup_1.0.0.exe',
     },
+
+    // 🍎 iOS — به‌زودی (url خالیه)
     ios: {
-      enabled: false,
+      enabled: true,
       url: '',
       badge: 'TestFlight',
       comingSoonText: 'به‌زودی',
       fileName: 'Ramo-iOS.ipa',
     },
+
     comingSoonText: '📥 لینک دانلود به زودی فعال می‌شود',
   },
 
-  // ═══════════════════════════════════════════════════════
-  // 🎨 اطلاعات برند
-  // ═══════════════════════════════════════════════════════
   brand: {
     name: 'رامو',
     nameEn: 'Ramo',
@@ -83,9 +71,6 @@ const RAMO_CONFIG = {
     releaseDate: '۱۴۰۵',
   },
 
-  // ═══════════════════════════════════════════════════════
-  // ✨ نمونه زنده‌ی کاتالوگ HTML
-  // ═══════════════════════════════════════════════════════
   liveDemo: {
     catalogUrl: '',
   },
