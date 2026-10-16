@@ -3,7 +3,7 @@
 // ============================================================
 
 const RAMO_CONFIG = {
-
+  
   pricing: {
     originalPrice: 10000000,
     discountedPrice: 4990000,
