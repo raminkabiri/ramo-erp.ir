@@ -49,20 +49,20 @@ const RAMO_CONFIG = {
   download: {
     android: {
       enabled: true,
-      url: '',
+      url: 'https://github.com/raminkabiri/ramo-erp.ir/releases/download/v1.0.0/Ramo-arm64-v8a-release.apk',
       badge: 'APK',
       comingSoonText: 'به‌زودی',
       fileName: 'Ramo-arm64-v8a-release.apk',
     },
     windows: {
       enabled: true,
-      url: '',
+      url: 'https://github.com/raminkabiri/ramo-erp.ir/releases/download/v1.0.0/Ramo_Setup_1.0.0.exe',
       badge: 'EXE',
       comingSoonText: 'به‌زودی',
       fileName: 'Ramo_Setup_1.0.0.exe',
     },
     ios: {
-      enabled: true,
+      enabled: false,
       url: '',
       badge: 'TestFlight',
       comingSoonText: 'به‌زودی',
