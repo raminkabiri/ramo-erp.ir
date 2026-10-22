@@ -37,7 +37,7 @@ const RAMO_CONFIG = {
     // 🤖 اندروید — فعال (لینک داره)
     android: {
       enabled: true,
-      url: 'https://github.com/raminkabiri/ramo-erp.ir/releases/download/V1.0.0/Ramo-arm64-v8a-release.apk',
+      url: 'https://github.com/raminkabiri/ramo-erp.ir/releases/download/V2.0.0/Ramo-arm64-v8a-release.apk',
       badge: 'APK',
       fileName: 'Ramo-arm64-v8a-release.apk',
     },
@@ -45,7 +45,7 @@ const RAMO_CONFIG = {
     // 🪟 ویندوز — فعال (لینک داره)
     windows: {
       enabled: true,
-      url: 'https://github.com/raminkabiri/ramo-erp.ir/releases/download/V1.0.0/Ramo_Setup_1.0.0.exe',
+      url: 'https://github.com/raminkabiri/ramo-erp.ir/releases/download/V2.0.0/Ramo_Setup_1.0.0.exe',
       badge: 'EXE',
       fileName: 'Ramo_Setup_1.0.0.exe',
     },
