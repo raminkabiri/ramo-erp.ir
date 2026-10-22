@@ -67,7 +67,7 @@ const RAMO_CONFIG = {
     nameEn: 'Ramo',
     slogan: 'کسب و کار تو، در دستان تو',
     description: 'سیستم جامع مدیریت کسب‌وکار با دستیار هوش مصنوعی فارسی',
-    version: '۱.۰.۰',
+    version: '2.۰.۰',
     releaseDate: '۱۴۰۵',
   },
 
